@@ -47,7 +47,7 @@ function App() {
       <Panel value={index} index={1}>
         {/* <h2> USER DATA</h2> */}
         <div>
-
+          <UserData/>
         </div>
       </Panel>
       </div>
