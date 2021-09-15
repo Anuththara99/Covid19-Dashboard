@@ -25,8 +25,9 @@ function DataFetching(){
                
             <Card style={{width:300, height:200,marginLeft:150,marginTop:100,float:'left'}}>
                 <CardHeader subheader="Global" title="Coronavirus Cases"/>
+               
                 <CardContent >
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" color="primary" >
                     {all.cases}
                     </Typography>
                 </CardContent>
@@ -34,7 +35,7 @@ function DataFetching(){
             <Card style={{width:300, height:200,marginLeft:30,marginTop:100,float:'left'}}>
                 <CardHeader subheader="Global" title="Deaths"/>
                 <CardContent >
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" color="primary">
                    {all.deaths}
                     </Typography>
                 </CardContent >
@@ -42,7 +43,7 @@ function DataFetching(){
             <Card style={{width:300, height:200,marginLeft:30,marginTop:100,float:'left'}}>
                 <CardHeader subheader="Global" title="Recovered"/>
                 <CardContent >
-                    <Typography variant="body2" color="textSecondary">
+                    <Typography variant="body2" color="primary">
                     {all.recovered}
                     </Typography>
                 </CardContent >

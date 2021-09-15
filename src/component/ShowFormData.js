@@ -22,7 +22,7 @@ const getDataFromLS= ()=>{
 
 const useStyles = makeStyles({
     table: {
-      minWidth: 650,
+      minWidth: 550,
     },
   });
 
@@ -41,7 +41,7 @@ function ShowFormData(){
             <Table className={classes.table} size="small" aria-label="a dense table">
                 <TableHead>
                 <TableRow>
-                    <TableCell>Email</TableCell>
+                    {/* <TableCell>Email</TableCell> */}
                     <TableCell align="right">Country</TableCell>
                     <TableCell align="right">new Cases&nbsp;</TableCell>
                     <TableCell align="right">tot Cases&nbsp;</TableCell>
@@ -51,9 +51,9 @@ function ShowFormData(){
                 <TableBody>
                 {covidCases.map((row) => (
                     <TableRow >
-                    <TableCell component="th" scope="row">
+                    {/* <TableCell component="th" scope="row">
                         {row.email}
-                    </TableCell>
+                    </TableCell> */}
                     <TableCell align="right">{row.country}</TableCell>
                     <TableCell align="right">{row.newCases}</TableCell>
                     <TableCell align="right">{row.totCases}</TableCell>

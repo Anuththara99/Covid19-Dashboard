@@ -23,8 +23,11 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <h1>COVID 19</h1>
+    <div className="App"  >
+      <div style={{height:400, backgroundImage: 'url(img/covidbg.png)',backgroundRepeat:"no-repeat",backgroundPosition:"center"}}>
+
+      </div>
+      {/* <h1>COVID 19</h1> */}
       
       <div>
       <Tabs variant="fullWidth" value ={index} onChange={onTabClicked} centered>
@@ -45,7 +48,7 @@ function App() {
                 
       </Panel>
       <Panel value={index} index={1}>
-        {/* <h2> USER DATA</h2> */}
+        
         <div>
           <UserData/>
         </div>

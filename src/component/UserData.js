@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card, CardContent, CardHeader, Tab ,Tabs, Typography} from '@material-ui/core';
 import Form  from './Form';
-import { scryRenderedComponentsWithType } from 'react-dom/test-utils';
 import ShowFormData from './ShowFormData';
 
 
@@ -18,7 +17,7 @@ function UserData(){
                     </Typography>
                 </CardContent>
             </Card>
-            <Card style={{width:700, height:400,marginLeft:50,marginTop:100,float:'left'}}>
+            <Card style={{width:600, height:400,marginLeft:50,marginTop:100,float:'left'}}>
                 <CardHeader  title="View Data"/>
                 <CardContent >
                     <Typography variant="body2" color="textSecondary">
