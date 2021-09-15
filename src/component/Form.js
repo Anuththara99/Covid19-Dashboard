@@ -45,19 +45,19 @@ function Form(){
                     <TextField id="outlined-basic" value={email} label="User Email" 
                     onChange ={(e)=>setEmail(e.target.value)}
                     variant="outlined" style={{marginLeft:5}}/>
-                    <TextField id="outlined-basic" label="Country" variant="outlined" 
+                    <TextField id="outlined-basic" value={country}label="Country" variant="outlined" 
                     onChange ={(e)=>setCountry(e.target.value)} style={{marginLeft:5}} />
                     <br/>
-                    <TextField id="outlined-basic" label="No of new cases" variant="outlined" 
+                    <TextField id="outlined-basic" value={newCases} label="No of new cases" variant="outlined" 
                     onChange ={(e)=>setNewCases(e.target.value)} style={{marginTop:10}} />
                     <br/>
-                    <TextField id="outlined-basic" label="No of total cases " variant="outlined"
+                    <TextField id="outlined-basic" value={totCases} label="No of total cases " variant="outlined"
                     onChange ={(e)=>setTotCases(e.target.value)} style={{marginTop:5}}/>
                     <br/>
-                     <TextField id="outlined-basic" label="No of total deaths" variant="outlined"
+                     <TextField id="outlined-basic" value={totDeaths} label="No of total deaths" variant="outlined"
                      onChange ={(e)=>setTotDeaths(e.target.value)} style={{marginTop:5}} />
                     <br/>
-                    <Button type="submit" variant="contained" color="secondary">
+                    <Button type="submit" variant="contained" color="secondary" style={{marginTop:5}}>
                         Save
                     </Button>
                 </form>
