@@ -10,7 +10,7 @@ function UserData(){
     return(
         <div>
             <Card style={{width:500, height:400,marginLeft:50,marginTop:100,float:'left'}}>
-                <CardHeader  title="Add Data"/>
+                <CardHeader  title="Add New Covid Cases"/>
                 <CardContent >
                     <Typography variant="body2" color="textSecondary">
                     <Form/>
@@ -18,7 +18,7 @@ function UserData(){
                 </CardContent>
             </Card>
             <Card style={{width:600, height:400,marginLeft:50,marginTop:100,float:'left'}}>
-                <CardHeader  title="View Data"/>
+                <CardHeader  title="View Covid Cases"/>
                 <CardContent >
                     <Typography variant="body2" color="textSecondary">
                     <ShowFormData/>

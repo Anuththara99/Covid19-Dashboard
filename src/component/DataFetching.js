@@ -22,8 +22,11 @@ function DataFetching(){
     },[])
     return(
         <div>
-               
-            <Card style={{width:300, height:200,marginLeft:150,marginTop:100,float:'left'}}>
+            <h2>
+                Global Coronavirus Information
+            </h2>
+            <div style={{marginLeft:150,marginTop:100,paddingLeft:10}}>
+            <Card style={{width:300, height:200,float:'left'}}>
                 <CardHeader subheader="Global" title="Coronavirus Cases"/>
                
                 <CardContent >
@@ -32,7 +35,7 @@ function DataFetching(){
                     </Typography>
                 </CardContent>
             </Card>
-            <Card style={{width:300, height:200,marginLeft:30,marginTop:100,float:'left'}}>
+            <Card style={{width:300, height:200,float:'left'}}>
                 <CardHeader subheader="Global" title="Deaths"/>
                 <CardContent >
                     <Typography variant="body2" color="primary">
@@ -40,7 +43,7 @@ function DataFetching(){
                     </Typography>
                 </CardContent >
             </Card>
-            <Card style={{width:300, height:200,marginLeft:30,marginTop:100,float:'left'}}>
+            <Card style={{width:300, height:200}}>
                 <CardHeader subheader="Global" title="Recovered"/>
                 <CardContent >
                     <Typography variant="body2" color="primary">
@@ -48,6 +51,9 @@ function DataFetching(){
                     </Typography>
                 </CardContent >
             </Card>
+            </div>
+               
+           
                
            
         </div>

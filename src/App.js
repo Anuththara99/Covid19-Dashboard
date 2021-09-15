@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, Tab ,Tabs, Typography} from '@material-u
 import { useState } from 'react';
 import DataFetching from './component/DataFetching';
 import UserData from './component/UserData';
+import CountryDataFetch from './component/CountryDataFetch'
 
 const Panel = (props)=> (
   <div hidden={props.value !== props.index}>
@@ -36,15 +37,17 @@ function App() {
       </Tabs>
       <Panel value={index} index={0}>
         <div>
-          <h2>
-            Global Coronavirus Information
-          </h2>
-                
+          
+          <div>
+            <DataFetching/>
+          </div>
+          <div>
+            <CountryDataFetch/>
+          </div>
+                 
         </div>
-        <div>
-          <DataFetching/>
-        </div>
-                
+       
+            
                 
       </Panel>
       <Panel value={index} index={1}>
