@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import axios from "axios"
 import { Card, CardContent, CardHeader, Tab ,Tabs, Typography} from '@material-ui/core'
+import Search from './Search.tsx'
 
 function CountryDataFetch(){
 
@@ -23,7 +24,7 @@ function CountryDataFetch(){
                 Coronavirus By Country
             </h2>
             <div>
-
+               <Search/>
             </div>
             
             <div style={{maxHeight:400,overflowY:'scroll'}}>
